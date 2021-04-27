@@ -14,7 +14,7 @@ def Bubble_Sort(arr):
         
 
 def main():
-    multiprocessing.freeze_support() # Windows 平台要加上这句，避免 RuntimeError
+    multiprocessing.freeze_support() # Windows 平台要使用此函數，避免 RuntimeError
     pool = multiprocessing.Pool()
     cpus = multiprocessing.cpu_count() #CPU核心數量
     results = []
